@@ -1,2 +1,4 @@
 # assignment-03
-check canvas for instructions
+Check canvas for instructions
+
+Deployed APP: https://assignment-03-chuwei-cai.vercel.app/
