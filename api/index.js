@@ -14,9 +14,10 @@ const requireAuth = auth({
 });
 
 const app = express();
+const allowedOrigins = ['http://localhost:3000', 'https://assignment-03-chuwei-cai.vercel.app/'];
 
 app.use(cors({
-  origin: 'http://localhost:3000',
+  origin: allowedOrigins,
   credentials: true
 }));
 app.use(express.urlencoded({ extended: true }));
