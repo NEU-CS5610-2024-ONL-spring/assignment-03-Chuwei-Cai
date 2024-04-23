@@ -1,0 +1,60 @@
+.book-page .header {
+  display: flex;
+  margin: 0;
+  justify-content: center;
+  background-color: transparent;
+}
+
+.book-page .heading {
+  margin: 0;
+  color: #B85450;
+}
+
+/* Styles for the book count */
+.book-count {
+  display: block;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: rgb(198, 86, 86);
+  text-align: center;
+  justify-content: center;
+  background-color: transparent;
+}
+
+.book-grid {
+  display: grid;
+  width: 100%;
+  justify-items: center;
+  grid-gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* Styles for when there are no books */
+.book-page .no-books {
+  margin: 0;
+  justify-items: center;
+  color: #B85450;
+  text-align: center;
+}
+
+
+/* styling for mobile phone screen*/
+@media (max-width: 480px) {
+  .book-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .book-count{
+    font-size: 1rem;
+  }
+}
+
+
+/* styling for tablet screen*/
+@media (max-width: 768px) {
+  .book-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .book-count{
+    font-size: 1.5rem;
+  }
+}

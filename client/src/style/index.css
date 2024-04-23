@@ -1,0 +1,7 @@
+* {
+  font-family: Arial, sans-serif, Times, serif; /* Fallback to Arial, then generic sans-serif */
+}
+
+#root {
+  height: 100%;
+}

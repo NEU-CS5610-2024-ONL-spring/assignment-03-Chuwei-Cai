@@ -1,0 +1,69 @@
+.profile-container {
+  margin: auto;
+  max-width: 600px;
+  margin-top: 50px; 
+  background-color: rgb(222, 219, 219);
+  border-radius: 10px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  }
+  
+  .profile-detail {
+    margin: 15px;
+    align-items: left;
+    display:flex;
+  }
+  
+  /* styling for the update nick name input text box */
+  .profile-detail input[type="text"] {
+    margin-right: 10px;
+    border: none;
+  }
+
+  /* styling for the update nick name button */ 
+  .profile-detail button {
+    border: none;
+    background-color: #f09e9a; 
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .profile-detail button:hover {
+    background-color: #B85450;
+  }
+
+/* styling for mobile phone screen */
+  @media (max-width: 480px) {
+    .profile-container {
+      max-width: 320px; 
+      padding: 15px; 
+    }
+    
+    .profile-detail input[type="text"] {
+      width: 50%; 
+  
+    .profile-detail button {
+      padding: 8px 16px;
+    }
+  }
+}
+
+/* styling for tablet screen */
+  @media (max-width: 768px) {
+    .profile-container {
+      max-width: 480px; 
+      padding: 20px; 
+    }
+    
+    .profile-detail input[type="text"] {
+      width: 60%; 
+    }
+  
+    .profile-detail button {
+      padding: 10px 20px; 
+    }
+  }
+  

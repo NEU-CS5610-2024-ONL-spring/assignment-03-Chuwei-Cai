@@ -1,0 +1,125 @@
+/* This file defines the style for book detail page. */
+.book-container {
+    display: flex;   
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+    margin-bottom: 40px;
+}
+
+.book-details {
+    width: 100%;
+    display: flex;
+    border-radius: 10px;/* Round corner */
+    padding: 16px;
+    max-width: 800px;
+    background-color: #B85450;
+}
+
+.info {
+    font-size: 14px;
+    display: inline-flex;
+    flex-direction: column;
+    align-items:last baseline;
+    position: relative;
+    justify-content: space-between;
+}
+
+.info .header {
+    margin-top: 0;
+    padding: 0;
+    background-color: #B85450;
+    font-weight:bold;
+}
+
+/* style for preview link */
+.info .header .preview {
+    color:blue;
+    font-size: large;
+    font-weight: bold;
+}
+
+.cover-wrapper img {
+    width:  150px;
+    border-radius: 10px; /* Round corner */
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.filler-cover-details {
+    width:  150px;
+    border-radius: 10px;/* Round corner */
+    object-fit: cover;
+    margin-right: 20px;
+} 
+
+.btn-add-to-read-list {
+    border: none;
+    margin-top: 10px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    bottom: 0; /* fix the position to the bottom of the container*/
+    right: 0; /* fix the position to the bottom of the container*/
+    cursor: pointer;
+    position: absolute;
+    color: white;
+    background-color: rgb(0, 123, 255);
+  }
+  
+.btn-add-to-read-list:hover {
+    background-color: #7650b8;
+}
+
+
+/* styling for phone screens*/
+@media (max-width: 480px) {
+    .info, 
+    .info .header {
+        font-size: 0.85rem;
+    }
+
+    .info .header .preview {
+        font-size: 0.7rem;
+    }
+
+    .btn-add-to-read-list {
+        width: 100%;
+        font-size: 0.7rem;  
+        padding: 6px 9px; 
+        position: static; 
+    }
+
+    .cover-wrapper img, 
+    .filler-cover-details {
+        width: 100px; 
+    }
+}
+  
+/* styling for tablet screens*/
+@media (max-width: 768px) {
+    .info, 
+    .info .header {
+        font-size: 14px;
+    }
+
+    .info .header .preview {
+        font-size: 1rem;
+    }
+
+    .btn-add-to-read-list {
+        padding: 9px 15px;
+        font-size: 1rem;
+    }
+
+    .cover-wrapper img, 
+    .filler-cover-details {
+        width: 115px;
+    }
+
+    .btn-add-to-read-list {
+        padding: 8px 14px;
+        font-size: 0.85rem; 
+  }
+}
+
+ 
