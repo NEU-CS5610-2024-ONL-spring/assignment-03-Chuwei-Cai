@@ -14,7 +14,7 @@ const requireAuth = auth({
 });
 
 const app = express();
-const allowedOrigins = ['http://localhost:3000', 'https://assignment-03-chuwei-cai.vercel.app/'];
+const allowedOrigins = ['http://localhost:3000', 'https://assignment-03-chuwei-cai.vercel.app'];
 
 app.use(cors({
   origin: allowedOrigins,
@@ -254,6 +254,6 @@ app.post("/verify-user", requireAuth, async (req, res) => {
 // });
 const PORT = parseInt(process.env.PORT) || 8080;
 app.listen(PORT, () => {
- console.log(`Server running on http://localhost:${PORT} 🎉 🚀`);
+ console.log(`Server running on http://localhost:${PORT}`);
 });
 
